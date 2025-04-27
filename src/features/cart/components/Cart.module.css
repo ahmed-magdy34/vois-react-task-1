@@ -1,0 +1,60 @@
+.cartContainer {
+  padding: 20px;
+  text-align: center;
+}
+
+.cartItems {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cartItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.cartItemImage {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 15px;
+}
+
+.cartItemDetails {
+  flex: 1;
+  text-align: left;
+}
+
+.emptyCart {
+  color: #555;
+  font-style: italic;
+}
+.button {
+  padding: 8px 12px; /* Comfortable button size */
+  font-size: 14px; /* Readable text size */
+  background-color: #fdb704; /* Green color for positivity */
+  color: #fff; /* White text for contrast */
+  border: none; /* Remove border */
+  border-radius: 6px; /* Rounded button corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+.button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+.btnDelete {
+  padding: 8px 12px; /* Comfortable button size */
+  font-size: 14px; /* Readable text size */
+  background-color: #ea1111; /* Green color for positivity */
+  color: #fff; /* White text for contrast */
+  border: none; /* Remove border */
+  border-radius: 6px; /* Rounded button corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth hover effect */
+}

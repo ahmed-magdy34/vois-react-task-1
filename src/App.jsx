@@ -1,35 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState } from "react";
+import MealsList from "./features/meals/components/MealsList";
+import Header from "./ui/Header";
+import { CartContextProvider } from "./features/cart/CartContext";
+import Modal from "./ui/Modal";
+import Cart from "./features/cart/components/Cart";
+import Checkout from "./features/checkout/components/Checkout";
+import { useModal } from "./ModalContext";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
+  const { isCheckout, setIsCheckout, setIsOpen } = useModal();
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+    <CartContextProvider>
+      <Modal>
+        {isCheckout ? <Checkout /> : <Cart />}
+        <button
+          onClick={() => {
+            if (isCheckout) {
+              setIsCheckout(false);
+            }
+            setIsOpen(false);
+          }}
+        >
+          Close
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+      </Modal>
+      <Header />
+      <MealsList />
+    </CartContextProvider>
+  );
+};
 
-export default App
+export default App;

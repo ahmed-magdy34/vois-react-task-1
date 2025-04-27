@@ -1,0 +1,86 @@
+/* Checkout.css */
+
+/* Container styling for the form */
+.form {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+}
+
+/* Styling for each form field container */
+.form div {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label styling */
+.label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Input styling */
+.input {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+/* Input focus state */
+.input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Error message styling */
+.error {
+  color: #e53935;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+/* Submit button styling */
+.button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 4px;
+}
+
+/* Disabled button styling */
+.button:disabled {
+  background-color: #7ea8e3;
+  cursor: not-allowed;
+}
+
+/* Hover effect for active button */
+.button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+.btnCart {
+  background: coral;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 4px;
+}
+.btnCart:hover {
+  background: lightcoral;
+}
