@@ -5,7 +5,7 @@
 }
 .nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   margin-bottom: 24px;
@@ -35,10 +35,35 @@
   transition-duration: 500ms;
 }
 .cartNum {
-  color: red;
+  position: absolute;
+  top: -9px;
+  right: -16px;
+  background-color: #ff4d4f;
+  color: white;
+  font-size: 12px;
   font-weight: bold;
+  border-radius: 50%;
+  padding: 4px;
+  min-width: 20px;
+  text-align: center;
+  line-height: 1;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 .cartNumContainer {
+  position: relative;
+  display: inline-block;
+  margin-right: 16px;
+}
+.fContainer {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  margin-left: 12px;
+}
+.fIcon {
+  font-size: 30px;
+  color: orange;
+  font-weight: bold;
 }

@@ -7,15 +7,15 @@ const MealsList = () => {
   const { isLoading, fetchError, mealsData } = useFetchMeals();
 
   if (isLoading) {
-    return <p>Loading meals...</p>; // Display a loading state
+    return <p>Loading meals...</p>;
   }
 
   if (fetchError) {
-    return <p>Error: {fetchError}</p>; // Display the error message
+    return <p>Error: {fetchError}</p>;
   }
 
   if (mealsData.length === 0) {
-    return <p>No meals available right now!</p>; // Handle an empty state
+    return <p>No meals available right now!</p>;
   }
 
   return (

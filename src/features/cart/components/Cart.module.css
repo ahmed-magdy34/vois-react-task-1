@@ -35,26 +35,26 @@
   font-style: italic;
 }
 .button {
-  padding: 8px 12px; /* Comfortable button size */
-  font-size: 14px; /* Readable text size */
-  background-color: #fdb704; /* Green color for positivity */
-  color: #fff; /* White text for contrast */
-  border: none; /* Remove border */
-  border-radius: 6px; /* Rounded button corners */
-  cursor: pointer; /* Pointer cursor on hover */
-  transition: background-color 0.3s; /* Smooth hover effect */
+  padding: 8px 12px;
+  font-size: 14px;
+  background-color: #fdb704;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .button:hover {
-  background-color: #45a049; /* Darker green on hover */
+  background-color: #45a049;
 }
 .btnDelete {
-  padding: 8px 12px; /* Comfortable button size */
-  font-size: 14px; /* Readable text size */
-  background-color: #ea1111; /* Green color for positivity */
-  color: #fff; /* White text for contrast */
-  border: none; /* Remove border */
-  border-radius: 6px; /* Rounded button corners */
-  cursor: pointer; /* Pointer cursor on hover */
-  transition: background-color 0.3s; /* Smooth hover effect */
+  padding: 8px 12px;
+  font-size: 14px;
+  background-color: #ea1111;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }

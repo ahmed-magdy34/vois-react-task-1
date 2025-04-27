@@ -1,17 +1,17 @@
 .mealsList {
   display: grid;
-  width: 100%; /* Ensures it takes full width */
-  max-width: 1200px; /* Prevents overflowing */
-  margin: 0 auto; /* Centers the grid within the page */
-  grid-template-columns: repeat(4, 1fr); /* Defines 4 equal columns */
-  justify-items: center; /* Centers items horizontally */
-  align-items: center; /* Centers items vertically */
-  gap: 6px; /* Adds space between items */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 6px;
   margin-left: -20px;
   margin-top: 160px;
 }
 
 .section {
-  width: 100%; /* Prevent horizontal scrolling */
-  padding: 0; /* Ensure no extra padding affects layout */
+  width: 100%;
+  padding: 0;
 }

@@ -12,7 +12,7 @@ const useFetchMeals = () => {
 
       try {
         setIsLoading(true);
-        setFetchError(""); // Clear previous errors
+        setFetchError("");
         const res = await fetch(
           `https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood
 `,
@@ -24,7 +24,7 @@ const useFetchMeals = () => {
         }
 
         const data = await res.json();
-        setMealsData(data.meals); // Store the list of recipes
+        setMealsData(data.meals);
       } catch (err) {
         if (err.name !== "AbortError") {
           // Only set errors if the error wasn't caused by an abort

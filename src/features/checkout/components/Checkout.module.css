@@ -1,6 +1,3 @@
-/* Checkout.css */
-
-/* Container styling for the form */
 .form {
   max-width: 500px;
   margin: 2rem auto;
@@ -12,20 +9,17 @@
   font-family: sans-serif;
 }
 
-/* Styling for each form field container */
 .form div {
   margin-bottom: 1.5rem;
   display: flex;
   flex-direction: column;
 }
 
-/* Label styling */
 .label {
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
 
-/* Input styling */
 .input {
   padding: 0.75rem;
   border: 1px solid #ccc;
@@ -34,20 +28,17 @@
   transition: border-color 0.3s ease;
 }
 
-/* Input focus state */
 .input:focus {
   border-color: #007bff;
   outline: none;
 }
 
-/* Error message styling */
 .error {
   color: #e53935;
   font-size: 0.85rem;
   margin-top: 0.5rem;
 }
 
-/* Submit button styling */
 .button {
   background-color: #007bff;
   color: #fff;
@@ -60,13 +51,11 @@
   margin: 4px;
 }
 
-/* Disabled button styling */
 .button:disabled {
   background-color: #7ea8e3;
   cursor: not-allowed;
 }
 
-/* Hover effect for active button */
 .button:hover:not(:disabled) {
   background-color: #0056b3;
 }
